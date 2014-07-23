@@ -1,0 +1,36 @@
+Confusion Matrix and Statistics
+           Reference
+Prediction  Normal Neptune Satan Smurf PortSweep NMap
+  Normal      1012       1     6     1         6    3
+  Neptune        0      78     0     0         0    0
+  Satan          0       0    63     0         0    0
+  Smurf          0       0     0    54         0    0
+  PortSweep      0       0     0     0        70    0
+  NMap           0       0     2     0         0   64
+
+Overall Statistics                                          
+               Accuracy : 0.986           
+                 95% CI : (0.9783, 0.9916)
+    No Information Rate : 0.7441          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.9671          
+ Mcnemar's Test P-Value : NA              
+
+Statistics by Class:
+                     Class: Normal Class: Neptune Class: Satan Class: Smurf
+Sensitivity                 1.0000        0.98734      0.88732      0.98182
+Specificity                 0.9511        1.00000      1.00000      1.00000
+Pos Pred Value              0.9835        1.00000      1.00000      1.00000
+Neg Pred Value              1.0000        0.99922      0.99383      0.99923
+Prevalence                  0.7441        0.05809      0.05221      0.04044
+Detection Rate              0.7441        0.05735      0.04632      0.03971
+Detection Prevalence        0.7566        0.05735      0.04632      0.03971
+                     Class: PortSweep Class: NMap
+Sensitivity                   0.92105     0.95522
+Specificity                   1.00000     0.99845
+Pos Pred Value                1.00000     0.96970
+Neg Pred Value                0.99535     0.99768
+Prevalence                    0.05588     0.04926
+Detection Rate                0.05147     0.04706
+Detection Prevalence          0.05147     0.04853

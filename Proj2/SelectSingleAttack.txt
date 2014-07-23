@@ -1,0 +1,39 @@
+Total Variation Considered:  100 %
+No of Attributes considered: 41 
+
+Results:
+
+Attack Type:  Neptune 
+              obtainedOutput
+expectedOutput Neptune Other
+       Neptune      50     6
+       Other         0   844
+Accuracy: 0.993 
+
+Attack Type:  Satan 
+              obtainedOutput
+expectedOutput Other Satan
+         Other   838     2
+         Satan    23    37
+Accuracy: 0.972 
+
+Attack Type:  Smurf 
+              obtainedOutput
+expectedOutput Other Smurf
+         Other   832     0
+         Smurf    11    57
+Accuracy: 0.988 
+
+Attack Type:  PortSweep 
+              obtainedOutput
+expectedOutput Other PortSweep
+     Other       837         1
+     PortSweep     6        56
+Accuracy: 0.992 
+
+Attack Type:  NMap 
+              obtainedOutput
+expectedOutput NMap Other
+         NMap    42     8
+         Other    4   846
+Accuracy: 0.987 

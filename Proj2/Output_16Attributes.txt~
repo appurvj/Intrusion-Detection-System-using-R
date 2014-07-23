@@ -1,0 +1,114 @@
+
+Attributes Considered: 
+ [1] "duration"                    "service"                    
+ [3] "dst_bytes"                   "hot"                        
+ [5] "logged_in"                   "num_root"                   
+ [7] "count"                       "srv_count"                  
+ [9] "rerror_rate"                 "srv_rerror_rate"            
+[11] "same_srv_rate"               "dst_host_count"             
+[13] "dst_host_srv_count"          "dst_host_same_srv_rate"     
+[15] "dst_host_same_src_port_rate" "dst_host_srv_rerror_rate"   
+
+Total Variation Captured:  91.8976 %
+No of Attributes considered: 16 
+
+Results:
+
+Misuse Detection:
+
+Attack Type:  Neptune 
+
+              obtainedOutput
+expectedOutput Neptune Other
+       Neptune      49    13
+       Other         3   835
+Neural Network Memory Consumption: 1619528 bytes
+Test Accuracy: 0.982
+False Positives ratio: 
+False Negatives ratio: 
+Execution time for Neptune attack detection model: 0.742  seconds 
+
+
+Attack Type:  Satan 
+
+              obtainedOutput
+expectedOutput Other Satan
+         Other   837     3
+         Satan     5    55
+Neural Network Memory Consumption: 1619528 bytes
+Test Accuracy: 0.991 
+False Positives ratio: 
+False Negatives ratio: 
+Execution time for Satan attack detection model: 2.775  seconds 
+
+
+Attack Type:  Smurf 
+
+              obtainedOutput
+expectedOutput Other Smurf
+         Other   833     1
+         Smurf    11    55
+Neural Network Memory Consumption: 1619528 bytes
+Test Accuracy: 0.987 
+False Positives ratio: 
+False Negatives ratio: 
+Execution time for Smurf attack detection model: 0.574  seconds 
+
+
+Attack Type:  PortSweep 
+
+              obtainedOutput
+expectedOutput Other PortSweep
+     Other       836         0
+     PortSweep     4        60
+Neural Network Memory Consumption: 1619528 bytes
+Test Accuracy: 0.996 
+False Positives ratio: 
+False Negatives ratio: 
+Execution time for PortSweep attack detection model: 3.668  seconds 
+
+
+Attack Type:  NMap 
+
+              obtainedOutput
+expectedOutput NMap Other
+         NMap    48    10
+         Other    7   835
+Neural Network Memory Consumption: 1619528 bytes
+Test Accuracy: 0.981 
+False Positives ratio: 
+False Negatives ratio: 
+Execution time for NMap attack detection model: 0.721  seconds 
+
+
+Anomaly Detection:
+
+              obtainedOutput
+expectedOutput Attack Normal
+        Attack    294      4
+        Normal      4    598
+1594328 bytes
+Neural Network Memory Consumption: 1594328 bytes
+Test Accuracy: 0.991 
+False Positives ratio: 
+False Negatives ratio: 
+Execution time for Anomaly Detection: 5.941 seconds 
+
+
+
+Five and Other:
+              obtainedOutput
+expectedOutput Neptune NMap Other PortSweep Satan Smurf
+     Neptune        52    0     0         0     4     0
+     NMap            0   41    21         2     0     0
+     Other           0   18   693         2     0     1
+     PortSweep       0    5     1        45     0     0
+     Satan           8    1     3         0    49     8
+     Smurf           0    2     1         5     1    57
+Neural Network Memory Consumption: 1829288 bytes
+Test Accuracy: 0.919 
+False Positives ratio: 
+False Negatives ratio: 
+Execution time for Detecting Five Specified Attacks: 24.782 seconds 
+
+

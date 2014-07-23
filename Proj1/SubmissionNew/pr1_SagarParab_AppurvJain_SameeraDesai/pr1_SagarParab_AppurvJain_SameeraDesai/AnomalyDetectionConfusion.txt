@@ -1,0 +1,25 @@
+Confusion Matrix and Statistics
+
+          Reference
+Prediction Normal Attack
+    Normal   1038      3
+    Attack      7    312
+                                          
+               Accuracy : 0.9926          
+                 95% CI : (0.9865, 0.9965)
+    No Information Rate : 0.7684          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.9794          
+ Mcnemar's Test P-Value : 0.3428          
+                                          
+            Sensitivity : 0.9933          
+            Specificity : 0.9905          
+         Pos Pred Value : 0.9971          
+         Neg Pred Value : 0.9781          
+             Prevalence : 0.7684          
+         Detection Rate : 0.7632          
+   Detection Prevalence : 0.7654          
+                                          
+       'Positive' Class : Normal          
+

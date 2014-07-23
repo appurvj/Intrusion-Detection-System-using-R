@@ -1,0 +1,91 @@
+\documentclass{report}
+\usepackage{geometry}
+\usepackage{lipsum}
+\title{Intelligent Security Systems\\Project - Intrusion Detection System}
+\author{Sameera Desai, Appurv Jain, Sagar Parab}
+
+\begin{document}
+\maketitle
+\paragraph{Executive Summary:\\}
+As the technology is ameliorating, the number of hacking and intrusions are augmenting. The motive behind the attack can be personal or professional. Intrusion Detection Systems are like alarms that alerts the user of the attack. Intrusion Detection Systems monitors the networks or the system behaviors for malicious activities or behaviors. It generates reports based on these activities. They detect unauthorized accesses.\\
+
+We will be implementing the Intrusion Detection System using R, a popular scripting language for statistical computing. R is open source and provides us with the flexibility and potency of a scripting language and has many freely available packages that implement many artificial intelligence and machine learning algorithms, statistical modeling techniques and various other useful tools. Being a scripting language, R enables us to write our own rules for misuse detection and can implement artificial neural networks using the Neural Networks package. Additionally, R provides a lot of functionality for data manipulation and visualization, which will enable us to clean and prepare the data for analysis.
+
+
+% We shall be using to implement intrusion detection system in project part II. The advantage of Weka over other tools, Weka provides a collection of visualization tools and algorithms for data analysis and predictive modeling, together with graphical user interfaces. Weka being an open source IDE, the tool is flexible enough to write our own rules for anomaly detection. As far as input is concerned, weka does accepts, standard input files like csv files.\\
+
+% We have been provided data files which need to be used in Part II, since we have decided the tool, our task for Part I will be pre-processing of Data, so that it can be used as input for Part II in project. We also identified, Weka accepts csv as one of the standard input file format. We shall be processing the given file into csv files, so that those will be accepted by the Weka.
+	
+	
+	
+\paragraph{Specification:\\}
+Our decision to select R as our tool of choice was preceded by a significant amount of research on popular Intrusion detection systems such as Snort, Bro, etc. However, those tools inhibit flexibility in terms of the techniques used for anomaly and misuse detection. Alternatively, we could have decided to use a data mining tool such as Weka, but the GUI interface is not as flexible and powerful as a scripting language. Therefore we decided to use R.\\ 
+
+
+
+Some of the advantages of building an IDS using R are :
+\begin{itemize}
+  \item Since R is written in C and Fortran, it is very fast. This is a string positive since many techniques used in misuse and anomaly detection are computations intensive
+  \item R is open source
+  \item R programs can be developed as a command line utility or have a GUI
+  \item R contains a vast collection of packages that support a wide variety of data processing and modeling techniques.
+  \item Hence all the tools and abilities required to build an efficient Intrusion Detection System is present in R itself
+\end{itemize}
+  
+
+% We converted the given files into csv file so that those are accepted by Weka. We formatted the data by adding field labels to each column in the file as mentioned in project specifications. It is possible to remove the redundant fields from the data.  E.g. the fields with zero variance are of no use while extracting information from the data. But, Weka does provide the facility to select the fields to extract the information. It calculates the variance from every field to decide the significance of every field in the data. It is always advisable to select the field with variable data for optimized information extraction. . Eliminating such data would reduce overhead and increase processing while analyzing the data.
+
+% Weka requires the numeric data to process it. Since we have all the given values in numeric format we don’t need to convert nominal attributes to numeric attributes.   
+  
+\paragraph{Methods and Techniques:\\}
+
+In order to prepare the data for the next phase, we compiled the various data sets into tow distinct data sets, one for Misuse Detection and the other for Anomaly Detection.
+
+The data set for anomaly detection will contain normal usage classified as 'normal' and all the attacks, regardless of type will be classified as 'attack'. This helps us classify pattern other than normal behavior as an attack. 
+
+For misuse detection, we used the 'normal' classification for normal usage and named the other attacks by their specific types.
+
+  
+% We did enough research on popular Intrusion Detection Systems such as Snort, Bro etc. We observed that most of them use data mining techniques to obtain information about anomalies. So we will be restricted to certain technique and with basic functionality provided by the IDS tool, if we select any IDS system for Project II. Instead we selected weka, which is a popular data mining tool. Weka supports several standard data mining tasks, more specifically, data preprocessing, clustering, classification, regression, visualization, and feature selection. Moreover, since weka developed on Java system, it is easy to customize or add new rules for the information mining, since everyone in group is vary confirmable in development java language. 
+
+% One of the major disadvantages of Snort was that it was an Open source language. It requires constant updates of rules as intruders are going to come up with better and better techniques to intrude the system. The user who uses Snort should have subscribed to Snort and should keep updating his rule set quite frequently. This might not be feasible all the time. But the feasibility comes at the cost of the security of his system.
+
+% Another possible Intrusion Detection tool that we came up with was ‘Bro’. But Bro had one main disadvantage – It could be implemented only on a Linux based machine. It cannot be used on Windows. Though Bro has the option of the compatibility version with Snort, it still needs the Linux environment.
+
+% Some of the advantages of building Weka as an ID when compared to the others are as follows:
+
+% GUI of Weka makes it very easy to work with it
+% Data preparation and feature selection is made easier
+% Weka has been implemented in Java, so it can run in almost any platform
+% The machine learning algorithms and visualization  tools are very easy to use and flexible
+% Weka contains a comprehensive collection of data preprocessing and modeling techniques
+% The knowledge flow interface can learn online from streamed data
+% So we selected Weka over any professional IDS. 
+
+  
+  
+  
+\paragraph{Implementation:\\}
+We used R for data manipulation.
+The attack we took into consideration were as follows:
+\begin{enumerate}
+  \item Neptune
+  \item Satan
+  \item Smurf
+  \item PortSweep
+  \item Nmap
+\end{enumerate}
+We converted the given files csv so that they were compatible with read functions in R. Then using R, we then added columns according to the attack type and then combined the various tables to form our master datasets for anomaly and misuse detection.
+
+ 
+  
+  
+% We converted the given files into csv file so that those are accepted by Weka. For that we provided every column with column name.
+
+% We tried to use some features of weka on converted data set. And we were successful in obtaining the output and we could able to analyze it.
+
+% We checked the feature selection feature in weka, and we could able to obtained features with significant variance.
+
+  
+  
+\end{document}
